@@ -91,7 +91,7 @@ elif st.session_state["index"] == 1.5:
         st.session_state["index"] += 0.5 #2
 
 elif st.session_state["index"] == 2:
-    st.title("Was waren die 3 Hauptprinzipien des Staatswesen der Republik?")
+    st.title("Wie wurde das Königreich Rom zu einer Republik?")
 
     col1, col2 = st.columns([1, 3])
 
@@ -100,14 +100,14 @@ elif st.session_state["index"] == 2:
             st.session_state["index"] += 0.5 #2,5
 
     with col2:
-        st.write("Gemeinschaft, Gewaltenteilung und Annuität.")
+        st.write("Durch den Sturz des Königs.")
 
     with col1:
         if st.button("B", key = "b_3"):
             st.session_state["index"] += 0.5 #2,5
 
     with col2:
-        st.write("Kollegialität, Iterationsverbot und Mitbestimmung.")
+        st.write("Es wurde zur Republik durch den Senat, wo die Macht aufgeteilt wurde und die Mitglieder jährlich neu gewählt wurden.")
 
     with col1:
         if st.button("C", key = "c_3"):
@@ -115,11 +115,11 @@ elif st.session_state["index"] == 2:
             st.session_state["punktestand"] += 1 #2
 
     with col2:
-        st.write("Kollegialität, Annualität und Iterationsverbot.")
+        st.write("Die Republik entstand durch die Teilung der königlichen Macht auf doppelt besetzte Ämter, die jährlich neu gewählt wurden.")
 
 elif st.session_state["index"] == 2.5:
     st.title("Das war falsch.")
-    st.write("Tatsächlich waren die 3 Hauptprinzipien die Kollegialität, Annualität und das Iterationsverbot.")
+    st.write("Tatsächlich bezeichten wir Rom als eine Republik, als sie unter dem Prinzip der Kollegialität und Anuität jährlich jeweils zwei Personen für eine Amt wählt, welches ein Teil der königlichen Macht erhielt. ")
 
     if st.button("OK", key = "ok_3"):
         st.session_state["index"] += 0.5 #3
@@ -212,7 +212,7 @@ elif st.session_state["index"] == 4:
             st.session_state["index"] += 0.5 #4,5
 
     with col2:
-        st.write("Es waren die Mandate, die man als Senatsmitglied bekam.")
+        st.write("Es waren die Bezeichnung für die Mitglieder mit Senat.")
 
     with col1:
         if st.button("C", key = "c_6"):
@@ -245,7 +245,7 @@ elif st.session_state["index"] == 6:
             st.session_state["index"] += 0.5 #6,5
 
     with col2:
-        st.write("Die Volksversammlung wählt Repräsentaten, die für sie die Personen für die Magistrate ernennen. Dabei wählen die Patrizier mehr Representanten.")
+        st.write("Die Volksversammlung wählt im Zenturiatskomitien die Magistrate, dabei wird Roms Fläche in 193 Gebiete aufgeteilt, die Mehrheit jedes Gebietes ist eine ganze Stimme für einen Kandidaten.")
 
     with col1:
         if st.button("C", key = "c_7"):
@@ -253,11 +253,11 @@ elif st.session_state["index"] == 6:
             st.session_state["punktestand"] += 1 #6
 
     with col2:
-        st.write("Die Volksversammlung wählt die Magistrate in dem Zenturiatskomitien, wo jede Gesellschaftsgruppe Zenturien zugewiesen, was nach der Vermögensklasse passiert.")
+        st.write("In dem Zenturiatskomitien erhält gede gesellschaftliche Gruppe nach ihrem Vermögen Zenturien. Je mehr Vermögen eine gesellschaftliche Gruppe hat, desto mehr Zenturien erhält sie und die Wahl wird durch die Stimmen der Zenturien entschieden.")
 
 elif st.session_state["index"] == 6.5:
     st.title("Das ist falsch.")
-    st.write("Die Magistrate werden von den Zenturiatskomitien gewählt, wo Zenturien von der Volksversammlungen gewählt wird. Und desto mehr Vermögen man hatte, desto mehr zählte die jeweilige Stimme.")
+    st.write("Die Magistrate werden von den Zenturiatskomitien gewählt, wo nach dem Vermögen 193 Zenturien vergeben werden. Je mehr Geld eine gesellschaftliche Gruppe hatte, desto mehr Zenturien erhielt sie. Wobei das mehrheitliche Ergebnis jeder Zenturie als eine Stimme für alle in ihr gilt.")
 
     if st.button("OK", key = "ok_7"):
         st.session_state["index"] += 0.5 #7
@@ -287,7 +287,7 @@ elif st.session_state["index"] == 7:
             st.session_state["index"] += 0.5 #7,5
 
     with col2:
-        st.write("Plezite")
+        st.write("Plebiszite")
 
 elif st.session_state["index"] == 7.5:
 
@@ -308,7 +308,7 @@ elif st.session_state["index"] == 8:
             st.session_state["index"] += 0.5 #8,5
 
     with col2:
-        st.write("Da sie die Römer vorher schon mal eroberten.")
+        st.write("Da die Etrusker zuvor um 387 v.Chr. Rom monate lang belagerten und plünderten.")
 
     with col1:
         if st.button("B", key = "b_9"):
@@ -335,7 +335,7 @@ elif st.session_state["index"] == 8.5:
 
 elif st.session_state["index"] == 9:
 
-    st.title("Welche Staatsform war die römsische Republik aus heutiger Sicht?")
+    st.title("Welche Staatsform war die römische Republik aus heutiger Sicht?")
 
     col1, col2 = st.columns([1, 3])
 
