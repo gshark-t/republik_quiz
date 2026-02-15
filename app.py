@@ -328,7 +328,7 @@ elif st.session_state["index"] == 8:
 elif st.session_state["index"] == 8.5:
 
     st.title("Das ist falsch.")
-    st.title("Die Etrusker war der Ursprung von Rom und hat sich erst als Republik unabhängig von den Etruskern gemacht. Letztlich unterwirft Rom die Etrusker, was als Zeichen des Wachstum und der Stärker der Römer gewertet werden kann.")
+    st.write("Die Etrusker war der Ursprung von Rom und hat sich erst als Republik unabhängig von den Etruskern gemacht. Letztlich unterwirft Rom die Etrusker, was als Zeichen des Wachstum und der Stärker der Römer gewertet werden kann.")
 
     if st.button("OK", key = "ok_9"):
         st.session_state["index"] += 0.5 #9
@@ -364,7 +364,10 @@ elif st.session_state["index"] == 9:
 elif st.session_state["index"] == 9.5:
 
     st.title("Das ist falsch.")
-    st.write("Die römische Republik war durch die enormen Privilegien der Patrizier eine Aristokratie.") 
+    st.write("Die römische Republik war durch die enormen Privilegien der Patrizier eine Aristokratie.")
+
+    if st.button("OK", key = "ok_10"):
+        st.session_state["index"] += 0.5 #10
 
 elif st.session_state["index"] == 10:
 
