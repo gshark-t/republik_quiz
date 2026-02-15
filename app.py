@@ -370,7 +370,7 @@ elif st.session_state["index"] == 10:
 
     st.title("Fertig!")
     st.write("Vielen Dank für das Mitmachen :-)")
-    st.write(f"Dein Score ist {punktestand} von 9 Punkten.")
+    st.write(f"Dein Score ist {st.session_state.punktestand} von 9 Punkten.")
 
 
 
