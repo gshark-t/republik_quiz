@@ -1,6 +1,8 @@
 import streamlit as st
 # Frage: Warum war die Eroberung der Etrusker so bedeutsam?
 # Frage zur Staatsform
+# Zitat von Cicero: "Suum cuique." bedeutet "Jedem das seine."
+
 page_bg = """
     <style>
     .stApp {
@@ -72,7 +74,7 @@ elif st.session_state["index"] == 1:
     with col1:
         if st.button("B", key = "b_2"):
             st.session_state["index"] += 1 #2
-            st.session_state["punktestand"] += 1 #1
+            st.session_state["punktestand"] += 0.7 #1
 
     with col2:
         st.write("Sie hat um etwa 503/4 angefangen sich zu entwickenln.")
@@ -90,7 +92,14 @@ elif st.session_state["index"] == 1.5:
     st.write("Die römische Republik begann sich um 504/3 v. Chr. zu entwickeln.")
 
     if st.button("OK", key = "ok_2"):
-        st.session_state["index"] += 0.5 #2
+        st.session_state["index"] += 0.2 #2
+
+elif st.session_state["index"] == 1.7:
+    st.title("Buchstabe")
+    st.write("Dein erster Buchstabe ist: S ")
+
+    if st.button("Weiter", key = "weiter_2"):
+        st.session_state["index"] += 0.3 #2
 
 elif st.session_state["index"] == 2:
     st.title("Was bedeutet res publicas, woraus das Wort Republik stammt?")
@@ -113,7 +122,7 @@ elif st.session_state["index"] == 2:
 
     with col1:
         if st.button("C", key = "c_3"):
-            st.session_state["index"] += 1 #3
+            st.session_state["index"] += 0.7 #2,7
             st.session_state["punktestand"] += 1 #2
 
     with col2:
@@ -124,7 +133,14 @@ elif st.session_state["index"] == 2.5:
     st.write("Tatsächlich bedeutet res publicas in etwa übersetzt 'die gemeinsame Sache'. ")
 
     if st.button("OK", key = "ok_3"):
-        st.session_state["index"] += 0.5 #3
+        st.session_state["index"] += 0.2 #2,7
+
+elif st.session_state["index"] == 2.7:
+    st.title("Buchstabe")
+    st.write("Dein zweiter Buchstabe ist: u")
+
+    if st.button("Weiter", key = "weiter_3"):
+        st.session_state["index"] += 0.3 #3
 
 elif st.session_state["index"] == 3:
     st.title("Wie hieß die erste Verschriftlichung der Gesetze der römischen Republik?")
@@ -133,7 +149,7 @@ elif st.session_state["index"] == 3:
 
     with col1:
         if st.button("A", key = "a_4"):
-            st.session_state["index"] += 1 #4
+            st.session_state["index"] += 0.7 #3,7
             st.session_state["punktestand"] += 1 #3
 
     with col2:
@@ -158,7 +174,14 @@ elif st.session_state["index"] == 3.5:
     st.write("Es war tatsächlich das Zwölftafelgesetz von 450 v. Chr., welches primär durch den ersten großen Generalstreik der Plebejer ausgelöst wurde.")
 
     if st.button("OK", key = "ok_4"):
-        st.session_state["index"] += 0.5 #4
+        st.session_state["index"] += 0.2 #3,7
+
+elif st.session_state["index"] == 3.7:
+    st.title("Buchstabe")
+    st.write("Dein dritter Buchstabe ist: u")
+
+    if st.button("Weiter", key = "weiter_4"):
+        st.session_state["index"] += 0.3 #4
 
 elif st.session_state["index"] == 5:
     st.title("Was ist die Aufgabe des Senats?")
@@ -174,7 +197,7 @@ elif st.session_state["index"] == 5:
 
     with col1:
         if st.button("B", key = "b_5"):
-            st.session_state["index"] += 1 #6
+            st.session_state["index"] += 0.7 #5,7
             st.session_state["punktestand"] += 1 #4
 
     with col2:
@@ -193,7 +216,14 @@ elif st.session_state["index"] == 5.5:
     st.write("Der Senat gibt primär den Magitraten Empfehlungen.")
 
     if st.button("OK", key = "ok_5"):
-        st.session_state["index"] += 0.5 #6
+        st.session_state["index"] += 0.2 #5,7
+
+elif st.session_state["index"] == 5.7:
+    st.title("Buchstabe")
+    st.write("Dein fünfte Buchstabe ist: c")
+
+    if st.button("Weiter", key = "weiter_6"):
+        st.session_state["index"] += 0.3 #6
 
 elif st.session_state["index"] == 4:
 
@@ -203,7 +233,7 @@ elif st.session_state["index"] == 4:
 
     with col1:
         if st.button("A", key = "a_6"):
-            st.session_state["index"] += 1 #5
+            st.session_state["index"] += 0.7 #4,7
             st.session_state["punktestand"] += 1 #5
 
     with col2:
@@ -228,7 +258,14 @@ elif st.session_state["index"] == 4.5:
     st.write("Die Mandate sind die Ämter der römischen Regierung.")
 
     if st.button("OK", key = "ok_6"):
-        st.session_state["index"] += 0.5 #5
+        st.session_state["index"] += 0.2 #4,7
+
+elif st.session_state["index"] == 4.7:
+    st.title("Buchstabe")
+    st.write("Dein vierter Buchstabe ist: m")
+
+    if st.button("Weiter", key = "weiter_5"):
+        st.session_state["index"] += 0.3 #5
 
 elif st.session_state["index"] == 6:
     st.title("Welches Glied der Verfassung könnte man als aristokratisch bezeichnen?")
@@ -251,7 +288,7 @@ elif st.session_state["index"] == 6:
 
     with col1:
         if st.button("C", key = "c_7"):
-            st.session_state["index"] += 1 #7
+            st.session_state["index"] += 0.7 #6,7
             st.session_state["punktestand"] += 1 #6
 
     with col2:
@@ -262,7 +299,14 @@ elif st.session_state["index"] == 6.5:
     st.write("Da der Senat das aristokratische Element darstellt. Jenes bedeutet übersetzt die Herrschaft der Besten und der Senat war zusammengesetzt aus mächtigen Menschen, welche zuvor ein Amt besaßen und somit zu jener Elite zählten.")
 
     if st.button("OK", key = "ok_7"):
-        st.session_state["index"] += 0.5 #7
+        st.session_state["index"] += 0.2 #6,7
+
+elif st.session_state["index"] == 6.7:
+    st.title("Buchstabe")
+    st.write("Dein sechster Buchstabe ist: u")
+
+    if st.button("Weiter", key = "weiter_7"):
+        st.session_state["index"] += 0.3 #7
 
 elif st.session_state["index"] == 7:
     st.title("Wie wird die Vertretung der Plebejer in der Regierung genannt?")
@@ -278,7 +322,7 @@ elif st.session_state["index"] == 7:
 
     with col1:
         if st.button("B", key = "b_8"):
-            st.session_state["index"] += 1 #8
+            st.session_state["index"] += 0.7 #7,7
             st.session_state["punktestand"] += 1 #7
 
     with col2:
@@ -297,7 +341,14 @@ elif st.session_state["index"] == 7.5:
     st.write("Die Vertretung der Plebejer in der Regierung nennt sich Volkstribunen.")
 
     if st.button("OK", key = "ok_8"):
-        st.session_state["index"] += 0.5 #8
+        st.session_state["index"] += 0.2 #7,7
+
+elif st.session_state["index"] == 7.7:
+    st.title("Buchstabe")
+    st.write("Dein siebter Buchstabe ist: i")
+
+    if st.button("Weiter", key = "weiter_7"):
+        st.session_state["index"] += 0.3 #8
 
 elif st.session_state["index"] == 8:
 
@@ -314,7 +365,7 @@ elif st.session_state["index"] == 8:
 
     with col1:
         if st.button("B", key = "b_9"):
-            st.session_state["index"] += 1 #9
+            st.session_state["index"] += 0.7 #8,7
             st.session_state["punktestand"] += 1 #8
 
     with col2:
@@ -333,7 +384,14 @@ elif st.session_state["index"] == 8.5:
     st.write("Die Etrusker war der Ursprung von Rom und hat sich erst als Republik unabhängig von den Etruskern gemacht. Letztlich unterwirft Rom die Etrusker, was als Zeichen des Wachstum und der Stärker der Römer gewertet werden kann.")
 
     if st.button("OK", key = "ok_9"):
-        st.session_state["index"] += 0.5 #9
+        st.session_state["index"] += 0.2 #8,7
+
+elif st.session_state["index"] == 8.7:
+    st.title("Buchstabe")
+    st.write("Dein achter Buchstabe ist: q")
+
+    if st.button("Weiter", key = "weiter_9"):
+        st.session_state["index"] += 0.3 #9
 
 elif st.session_state["index"] == 9:
 
@@ -357,7 +415,7 @@ elif st.session_state["index"] == 9:
 
     with col1:
         if st.button("C", key = "c_10"):
-            st.session_state["index"] += 1 #10
+            st.session_state["index"] += 0.7 #9,7
             st.session_state["punktestand"] += 1 #9
 
     with col2:
@@ -369,7 +427,14 @@ elif st.session_state["index"] == 9.5:
     st.write("Die römische Republik war durch die enormen Privilegien der Patrizier Oligarchie. Da eine Aristokratie dann zur Oligarchie wird, wenn die Herrschenden nur dem Eigennutz einer gesellschaftlichen Minderheit dienen.")
 
     if st.button("OK", key = "ok_10"):
-        st.session_state["index"] += 0.5 #10
+        st.session_state["index"] += 0.2 #9,7
+
+elif st.session_state["index"] == 9.7:
+    st.title("Buchstabe")
+    st.write("Dein neunter Buchstabe ist: u")
+
+    if st.button("Weiter", key = "weiter_10"):
+        st.session_state["index"] += 0.3 #10
 
 elif st.session_state["index"] == 10:
 
@@ -377,12 +442,18 @@ elif st.session_state["index"] == 10:
     st.write("Vielen Dank für das Mitmachen :-)")
     st.write(f"Dein Score ist {st.session_state.punktestand} von 9 Punkten.")
 
+    st.title("Das Buchstabenrätzel:")
+    st.write("Super! Dein letzter Buchstabe ist 'e', um dein Zitat eines berühmten römischen Konsul namens Cicero entschlüsseln zu können.")
+    st.write("Und natürlich ist es in Latein (-:")
+
     if st.button("Bildquellen", key = "bildquellen_11"):
         st.session_state["index"] += 1 #11
 
 elif st.session_state["index"] == 11:
     st.title("Bildquellen")
-    st.write("[1] unbekannt: Römisches Reich. In: https://romischesreich.de, o.D. URL: https://romischesreich.de/ (zuletzt abgerufen: 15.02.2026)
+    st.write("[1] unbekannt: Römisches Reich. In: https://romischesreich.de, o.D. URL: https://romischesreich.de/ (zuletzt abgerufen: 15.02.2026")
+    if st.button("Zurück", key = "zurück_11"):
+        st.session_state["index"] -= 1 #10
 
 
 
