@@ -1,5 +1,6 @@
 import streamlit as st
-
+# Frage: Warum war die Eroberung der Etrusker so bedeutsam?
+# Frage zur Staatsform
 page_bg = """
     <style>
     .stApp {
@@ -51,6 +52,7 @@ if st.session_state["index"] == 0:
     st.title("Was weißst du über die römische Republik?")
     st.write("In diesem Quiz findest du es heraus.")
     st.image("./römisches-reich.jpg")
+    st.write("[1]")
     
     if st.button("Start", key = "start_1"):
         st.session_state["index"] += 1 #1
@@ -91,7 +93,7 @@ elif st.session_state["index"] == 1.5:
         st.session_state["index"] += 0.5 #2
 
 elif st.session_state["index"] == 2:
-    st.title("Wie wurde das Königreich Rom zu einer Republik?")
+    st.title("Was bedeutet res publicas, woraus das Wort Republik stammt?")
 
     col1, col2 = st.columns([1, 3])
 
@@ -100,14 +102,14 @@ elif st.session_state["index"] == 2:
             st.session_state["index"] += 0.5 #2,5
 
     with col2:
-        st.write("Durch den Sturz des Königs.")
+        st.write("Zusammenschluss")
 
     with col1:
         if st.button("B", key = "b_3"):
             st.session_state["index"] += 0.5 #2,5
 
     with col2:
-        st.write("Es wurde zur Republik durch den Senat, wo die Macht aufgeteilt wurde und die Mitglieder jährlich neu gewählt wurden.")
+        st.write("Volksherrschaft")
 
     with col1:
         if st.button("C", key = "c_3"):
@@ -115,11 +117,11 @@ elif st.session_state["index"] == 2:
             st.session_state["punktestand"] += 1 #2
 
     with col2:
-        st.write("Die Republik entstand durch die Teilung der königlichen Macht auf doppelt besetzte Ämter, die jährlich neu gewählt wurden.")
+        st.write("Die gemeinsame Sache")
 
 elif st.session_state["index"] == 2.5:
     st.title("Das war falsch.")
-    st.write("Tatsächlich bezeichten wir Rom als eine Republik, als sie unter dem Prinzip der Kollegialität und Anuität jährlich jeweils zwei Personen für eine Amt wählt, welches ein Teil der königlichen Macht erhielt. ")
+    st.write("Tatsächlich bedeutet res publicas in etwa übersetzt 'die gemeinsame Sache'. ")
 
     if st.button("OK", key = "ok_3"):
         st.session_state["index"] += 0.5 #3
@@ -176,7 +178,7 @@ elif st.session_state["index"] == 5:
             st.session_state["punktestand"] += 1 #4
 
     with col2:
-        st.write("Er berät die Magistrate und die Volkstributen Vorschlägen und Empfehlungen.")
+        st.write("Er berät primär die Magistrate zu politischen Entscheidungen.")
 
     with col1:
         if st.button("C", key = "c_5"):
@@ -188,7 +190,7 @@ elif st.session_state["index"] == 5:
 elif st.session_state["index"] == 5.5:
 
     st.title("Das ist falsch.")
-    st.write("Der Senat gibt den Magitraten Empfehlungen und legt den Volkstribunen Gesetzesvorschläge vor.")
+    st.write("Der Senat gibt primär den Magitraten Empfehlungen.")
 
     if st.button("OK", key = "ok_5"):
         st.session_state["index"] += 0.5 #6
@@ -229,7 +231,7 @@ elif st.session_state["index"] == 4.5:
         st.session_state["index"] += 0.5 #5
 
 elif st.session_state["index"] == 6:
-    st.title("Wie werden jährlich die Magistrate der römischen Republik gewählt?")
+    st.title("Welches Glied der Verfassung könnte man als aristokratisch bezeichnen?")
 
     col1, col2 = st.columns([1, 3])
 
@@ -238,14 +240,14 @@ elif st.session_state["index"] == 6:
             st.session_state["index"] += 0.5 #6,5
 
     with col2:
-        st.write("Bei der Volksversammlung können alle männlichen Bürger gleichberechtigt ihre Stimme ab.")
+        st.write("Die römschen Ämter, da sie zumeist mit Personen aus der Oberschicht besetzt wurden.")
 
     with col1:
         if st.button("B", key = "b_7"):
             st.session_state["index"] += 0.5 #6,5
 
     with col2:
-        st.write("Die Volksversammlung wählt im Zenturiatskomitien die Magistrate, dabei wird Roms Fläche in 193 Gebiete aufgeteilt, die Mehrheit jedes Gebietes ist eine ganze Stimme für einen Kandidaten.")
+        st.write("Den Konsul spezifisch, da dieses Amt davon ausgeht, dass jemand die Macht über das Militär und oberstes Amt der Regierung erhalten soll.")
 
     with col1:
         if st.button("C", key = "c_7"):
@@ -253,11 +255,11 @@ elif st.session_state["index"] == 6:
             st.session_state["punktestand"] += 1 #6
 
     with col2:
-        st.write("In dem Zenturiatskomitien erhält gede gesellschaftliche Gruppe nach ihrem Vermögen Zenturien. Je mehr Vermögen eine gesellschaftliche Gruppe hat, desto mehr Zenturien erhält sie und die Wahl wird durch die Stimmen der Zenturien entschieden.")
+        st.write("Der Senat, da seine Mitglieder nur beitreten können, wenn sie bereits Regierungsämter belegt haben und somit zu den Machtigen und Erfahrenen zählen.")
 
 elif st.session_state["index"] == 6.5:
     st.title("Das ist falsch.")
-    st.write("Die Magistrate werden von den Zenturiatskomitien gewählt, wo nach dem Vermögen 193 Zenturien vergeben werden. Je mehr Geld eine gesellschaftliche Gruppe hatte, desto mehr Zenturien erhielt sie. Wobei das mehrheitliche Ergebnis jeder Zenturie als eine Stimme für alle in ihr gilt.")
+    st.write("Da der Senat das aristokratische Element darstellt. Jenes bedeutet übersetzt die Herrschaft der Besten und der Senat war zusammengesetzt aus mächtigen Menschen, welche zuvor ein Amt besaßen und somit zu jener Elite zählten.")
 
     if st.button("OK", key = "ok_7"):
         st.session_state["index"] += 0.5 #7
@@ -359,12 +361,12 @@ elif st.session_state["index"] == 9:
             st.session_state["index"] += 0.5 #9,5
 
     with col2:
-        st.write("Die römische Republik war eine Republik, also Übersetzt ein Gemeinwesen. Genaugesagt eine demokratische Republik, aufgrund der jährlichen Wahlen der Regierungsämter.")
+        st.write("Sie war eine Oligarchie, also die Herrschaft der Wenigen. Da die Herrscherelite eine gesellschaftliche Minderheit darstellte und primär Eigeninteressen verfolgte.")
 
 elif st.session_state["index"] == 9.5:
 
     st.title("Das ist falsch.")
-    st.write("Die römische Republik war durch die enormen Privilegien der Patrizier eine Aristokratie.")
+    st.write("Die römische Republik war durch die enormen Privilegien der Patrizier Oligarchie. Da eine Aristokratie dann zur Oligarchie wird, wenn die Herrschenden nur dem Eigennutz einer gesellschaftlichen Minderheit dienen.")
 
     if st.button("OK", key = "ok_10"):
         st.session_state["index"] += 0.5 #10
@@ -374,6 +376,13 @@ elif st.session_state["index"] == 10:
     st.title("Fertig!")
     st.write("Vielen Dank für das Mitmachen :-)")
     st.write(f"Dein Score ist {st.session_state.punktestand} von 9 Punkten.")
+
+    if st.button("Bildquellen", key = "bildquellen_11"):
+        st.session_state["index"] += 1 #11
+
+elif st.session_state["index"] == 11:
+    st.title("Bildquellen")
+    st.write("[1] unbekannt: Römisches Reich. In: https://romischesreich.de, o.D. URL: https://romischesreich.de/ (zuletzt abgerufen: 15.02.2026)
 
 
 
