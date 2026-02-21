@@ -343,8 +343,7 @@ elif st.session_state["index"] == 9:
 
     with col1:
         if st.button("A", key = "a_10"):
-            st.session_state["index"] += 1 #10
-            st.session_state["punktestand"] += 1 #9
+            st.session_state["index"] += 0.5 #9,5
 
     with col2:
         st.write("Sie war eine Aristokratie, also die Herrschaft einer qualifizierten und privilegierten Minderheit.")
@@ -358,7 +357,8 @@ elif st.session_state["index"] == 9:
 
     with col1:
         if st.button("C", key = "c_10"):
-            st.session_state["index"] += 0.5 #9,5
+            st.session_state["index"] += 1 #10
+            st.session_state["punktestand"] += 1 #9
 
     with col2:
         st.write("Sie war eine Oligarchie, also die Herrschaft der Wenigen. Da die Herrscherelite eine gesellschaftliche Minderheit darstellte und primär Eigeninteressen verfolgte.")
