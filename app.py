@@ -362,7 +362,7 @@ elif st.session_state["index"] == 8:
             st.session_state["index"] += 0.5 #8,5
 
     with col2:
-        st.write("A) Da die Etrusker zuvor um 387 v.Chr. Rom monate lang belagerten und plünderten.")
+        st.write("A) Da die Etrusker zuvor um 387 v.Chr. Rom Monate lang belagerten und plünderten.")
 
     with col1:
         if st.button("B", key = "b_9"):
@@ -457,15 +457,18 @@ elif st.session_state["index"] == 10:
 
 elif st.session_state["index"] == 11:
     st.title("Bildquellen")
-    st.write("[1] unbekannt: Römisches Reich. In: https://romischesreich.de, o.D. URL: https://romischesreich.de/ (zuletzt abgerufen: 15.02.2026")
+    st.write("[1] unbekannt: Römisches Reich. In: https://romischesreich.de, o.D. URL: https://romischesreich.de/ (zuletzt abgerufen: 15.02.2026)")
     if st.button("Zurück", key = "zurück_11"):
         st.session_state["index"] -= 1 #10
 
 elif st.session_state["index"] == 12:
     st.title("Lösungen des Buchstabenrätzel")
     st.write("Wenn du jetzt die Buchstaben 'derepublica' hast, hast du das Rätzel vervollständigt.")
-    st.wrie("Es ist der Name des Buches 'de re publica' von Cicero der unter anderem römischer Konsul war und darun den römischen Staat zu der Zeit beschrieb.")
+    st.write("Es ist der Name des Buches 'de re publica' von Cicero der unter anderem römischer Konsul war und darun den römischen Staat zu der Zeit beschrieb.")
     st.write("PS.: Den Title des Buches müsstest du schon übersetzten können...")
+
+    if st.button("Zurück", key = "zurück_12"):
+        st.session_state["index"] -= 2 #10
 
 
 
