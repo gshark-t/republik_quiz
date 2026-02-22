@@ -1,8 +1,7 @@
 import streamlit as st
 # Frage: Warum war die Eroberung der Etrusker so bedeutsam?
 # Frage zur Staatsform
-# Buch von Cicero: "De re publica"
-# A, B und C vor antwortmöglichkeiten setzten
+
 
 page_bg = """
     <style>
@@ -464,7 +463,7 @@ elif st.session_state["index"] == 11:
 elif st.session_state["index"] == 12:
     st.title("Lösungen des Buchstabenrätzel")
     st.write("Wenn du jetzt die Buchstaben 'derepublica' hast, hast du das Rätzel vervollständigt.")
-    st.write("Es ist der Name des Buches 'de re publica' von Cicero der unter anderem römischer Konsul war und darun den römischen Staat zu der Zeit beschrieb.")
+    st.write("Es ist der Name des Buches 'de re publica' von Cicero der unter anderem römischer Konsul war und um etwa bis 50 v. Chr. den römischen Staat zu der Zeit beschrieb.")
     st.write("PS.: Den Title des Buches müsstest du schon übersetzten können...")
 
     if st.button("Zurück", key = "zurück_12"):
