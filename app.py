@@ -73,8 +73,8 @@ elif st.session_state["index"] == 1:
 
     with col1:
         if st.button("B", key = "b_2"):
-            st.session_state["index"] += 1 #2
-            st.session_state["punktestand"] += 0.7 #1
+            st.session_state["index"] += 0.7 #1,7
+            st.session_state["punktestand"] += 1 #1
 
     with col2:
         st.write("Sie hat um etwa 503/4 angefangen sich zu entwickenln.")
