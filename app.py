@@ -55,6 +55,7 @@ if st.session_state["index"] == 0:
     st.write("In diesem Quiz findest du es heraus.")
     st.image("./römisches-reich.jpg")
     st.write("[1]")
+    st.write("Hab etwas zum schreiben bereit, da du ein Buchstabenrätzel lösen musst und die Buchstaben die du sammelst, notieren musst.")
     
     if st.button("Start", key = "start_1"):
         st.session_state["index"] += 1 #1
